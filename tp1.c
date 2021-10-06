@@ -31,14 +31,16 @@ int main(int argc, char* argv[]){
       exit(1);
     }
     
-    int a, cont, sizeVet;
+    int a,b, cont, sizeVet;
     int *vetor;
 
     cont = 0;
 
     while(!feof(entryfile)){
-        fscanf(entryfile,"%d",&a);
-        cont++;
+        b = fscanf(entryfile,"%i",&a);
+        if(b == 1){
+            cont++;
+        }
     }
 
     fclose(entryfile);
@@ -52,11 +54,13 @@ int main(int argc, char* argv[]){
 
     while(!feof(entryfile)){
         fscanf(entryfile,"%d",&a);    
-        vetor[cont] = a;
-        cont++;
+        if(b == 1){
+            vetor[cont] = a;
+            cont++;
+        }
     }
-
-    verifica_primo(vetor,sizeVet,exitfile);
+    printf("%i\n",sizeVet);
+    //verifica_primo(vetor,sizeVet,exitfile);
 
     free(vetor);
     fclose(entryfile);
