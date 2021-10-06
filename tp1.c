@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void verifica_primo(int vetor[],int sizeVet, FILE* arq){
-    arq = fopen("saida.txt","r");
+    
     for(int i = 0; i < sizeVet; i++){
         if( vetor[i] != 1){
             int cont = 0;
@@ -19,8 +19,6 @@ void verifica_primo(int vetor[],int sizeVet, FILE* arq){
             }
         }
     }
-    
-    fclose(arq);
 }
 
 
@@ -44,9 +42,10 @@ int main(int argc, char* argv[]){
     }
 
     fclose(entryfile);
-    fopen(argv[1],"r");
+    entryfile = fopen(argv[1],"r");
+    exitfile = fopen("saida.txt","w");
     
-    sizeVet = cont++;
+    sizeVet = cont;
     cont = 0;
 
     vetor = (int*)malloc(sizeVet*sizeof(int));
@@ -57,9 +56,10 @@ int main(int argc, char* argv[]){
         cont++;
     }
 
-    verifica_primo(vetor,sizeVet);
+    verifica_primo(vetor,sizeVet,exitfile);
 
     free(vetor);
     fclose(entryfile);
+    fclose(exitfile);
     return 0;
 }
