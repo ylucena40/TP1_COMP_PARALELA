@@ -8,6 +8,7 @@ void verifica_primo(int vetor[],int sizeVet){
             for(int j = 2; j < vetor[i] / 2; j++){
                 if(vetor[i] % j == 0){
                     cont++;
+                    break;
                 }
             }
             if(cont == 0){
