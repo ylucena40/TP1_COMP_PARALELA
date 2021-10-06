@@ -1,6 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void verifica_primo(int vetor[],int sizeVet){
+    for(int i = 0; i < sizeVet; i++){
+        if( vetor[i] != 1){
+            int cont = 0;
+            for(int j = 2; j < vetor[i] / 2; j++){
+                if(vetor[i] % j == 0){
+                    cont++;
+                }
+            }
+            if(cont == 0){
+                printf("O numero: %d eh primo.\n",vetor[i]);
+            }
+            else{
+                printf("O numero: %d nao eh primo.\n",vetor[i]);
+            }
+        }
+    }
+}
 
 
 int main(int argc, char* argv[]){
@@ -35,11 +53,7 @@ int main(int argc, char* argv[]){
         cont++;
     }
 
-    for(int i = 0; i < sizeVet; i++){
-        printf("pos %d:  -> %d\n",i+1,vetor[i]);
-    }
-
-    printf("%d\n",vetor[0]);
+    verifica_primo(vetor,sizeVet);
 
     free(vetor);
     fclose(entryfile);
