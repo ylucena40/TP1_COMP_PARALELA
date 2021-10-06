@@ -59,8 +59,8 @@ int main(int argc, char* argv[]){
             cont++;
         }
     }
-    printf("%i\n",sizeVet);
-    //verifica_primo(vetor,sizeVet,exitfile);
+    
+    verifica_primo(vetor,sizeVet,exitfile);
 
     free(vetor);
     fclose(entryfile);
