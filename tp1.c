@@ -19,6 +19,9 @@ void verifica_primo(int vetor[],int sizeVet, FILE* arq){
                 fprintf(arq,"%d\n",cont+2);
             }
         }
+        // else {
+        //     fprintf(arq,"%d\n",1);
+        // }
     }
 }
 
@@ -54,7 +57,7 @@ int main(int argc, char* argv[]){
     vetor = (int*)malloc(sizeVet*sizeof(int));
 
     while(!feof(entryfile)){
-        fscanf(entryfile,"%d",&a);    
+        b = fscanf(entryfile,"%d",&a);    
         if(b == 1){
             vetor[cont] = a;
             cont++;
