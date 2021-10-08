@@ -4,6 +4,7 @@
 void verifica_primo(int vetor[],int sizeVet, FILE* arq){
     
     for(int i = 0; i < sizeVet; i++){
+        printf("%d\n",vetor[i]);
         if( vetor[i] != 1){
             int cont = 0;
             for(int j = 2; j < (vetor[i]/2)+1; j++){
