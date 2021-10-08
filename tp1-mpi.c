@@ -7,12 +7,17 @@
 
 int *vetor;
 int resposta[];
+int vetorFinal[];
 
-void verifica_primo(int inicio, int fim){
+void verificaPrimo(int inicio, int fim, int rank){
     
     int contadorResposta = 0;
+    
+    printf("----- Proc = %d -----\n", rank);
+    printf("--------------------------\n");
 
     for(int i = inicio; i < fim; i++){
+        printf("%d\n", vetor[i]);
         if(vetor[i] != 1){
             int cont = 0;
             for(int j = 2; j < (vetor[i]/2)+1; j++){
@@ -22,9 +27,11 @@ void verifica_primo(int inicio, int fim){
             }
             if(cont == 0){
                 resposta[contadorResposta] = 2;
+                //printf("Valor = %d -- Divisores = %d\n", vetor[i], 2);
             }
             else{
                 resposta[contadorResposta] = cont+2;
+                //printf("Valor = %d -- Divisores = %d\n", vetor[i], cont+2);
             }
             contadorResposta++;
         }
@@ -33,9 +40,10 @@ void verifica_primo(int inicio, int fim){
             contadorResposta++;
         }
     }
+    printf("--------------------------\n");
 }
 
-int arquivo(){
+int arquivoEntrada(){
     
     FILE* entryfile;
     
@@ -63,6 +71,7 @@ int arquivo(){
     cont = 0;
 
     vetor = (int*)malloc(sizeVet*sizeof(int));
+    vetorFinal[sizeVet];
 
     while(!feof(entryfile)){
         verificaLinha = fscanf(entryfile,"%d",&valorLinha);    
@@ -78,6 +87,41 @@ int arquivo(){
 
 }
 
+void arquivoSaida(int vetorFinal[], int sizeVet){
+
+    FILE* exitfile;
+    exitfile = fopen("testesaida.txt", "w");
+
+    for (int i = 0; i < sizeVet; i++){
+        fprintf(exitfile, "%d\n", vetorFinal[i]);
+    }
+
+    fclose(exitfile);
+}
+
+void agrupaVetor(int vetorFinal[], int resposta[], int rank, int tamResposta, int size, int sizeVet){
+
+    int fim;
+
+    if (rank != size-1){
+        fim = tamResposta*rank;
+    }
+    else{
+        fim = sizeVet;
+    }
+
+    //printf("Processador = %d -- InicioVetor = %d -- FimVetor = %d\n", rank, fim-tamResposta, fim);
+
+    int contResposta = 0;
+    for (int i = fim-tamResposta; i < fim ; i++){
+        vetorFinal[i] = resposta[contResposta];
+        contResposta++;
+        //printf("VetorFinal[%d] = %d\n", i, vetorFinal[i]);
+    }
+
+
+}
+
 int main(int argc, char **argv){
 
     int rank, size;
@@ -86,7 +130,7 @@ int main(int argc, char **argv){
 
     int tamResposta;
 
-    sizeVet = arquivo();
+    sizeVet = arquivoEntrada();
 
     MPI_Status status;
 
@@ -98,10 +142,10 @@ int main(int argc, char **argv){
     if(rank != 0) {
         
         if (rank != size-1){ 
-            tamResposta = sizeVet/size-1;
+            tamResposta = sizeVet/(size-1);
         }
         else {
-            tamResposta = (sizeVet/size-1)+(sizeVet%size-1);
+            tamResposta = (sizeVet/(size-1))+(sizeVet%(size-1));
         }
 
         resposta[tamResposta];
@@ -117,18 +161,31 @@ int main(int argc, char **argv){
         
         inicio = fim - tamResposta;
 
-        verifica_primo(inicio, fim);
-        MPI_Send(resposta, tamResposta, MPI_INT, 0, STD_TAG, MPI_COMM_WORLD);
+        printf("Rank = %d - Inicio = %d - Fim = %d\n", rank, inicio, fim-1);
+
+        verificaPrimo(inicio, fim, rank);
+        MPI_Ssend(resposta, tamResposta, MPI_INT, 0, STD_TAG, MPI_COMM_WORLD);
     }
 
     else {
+        
+
         for (int i = 1; i < size; i++){
-            MPI_Recv(resposta, 6, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
-            printf("Proc %d -- %d\n", status.MPI_SOURCE, resposta[0]);
+            if (i != size-1){ 
+                tamResposta = sizeVet/(size-1);
+            }
+            else {
+                tamResposta = (sizeVet/(size-1))+(sizeVet%(size-1));
+            }
+
+            MPI_Recv(resposta, tamResposta, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
+            agrupaVetor(vetorFinal, resposta, i, tamResposta, size, sizeVet);
         }
     }
 
     MPI_Finalize();
+
+    arquivoSaida(vetorFinal, sizeVet);
 
     return 0;
 }
