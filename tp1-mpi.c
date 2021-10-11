@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <mpi.h>
+#include <time.h>
 #define STD_TAG 0
 
 void verificaPrimo(int particao[], int resposta[], int sizeVet){
@@ -147,6 +148,9 @@ int main(int argc, char **argv){
         int tamParticao;
         int *particao;
         int *resposta;
+        
+        clock_t t;
+
         MPI_Probe(0, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
         MPI_Get_count(&status, MPI_INT, &tamParticao);
 
@@ -155,8 +159,12 @@ int main(int argc, char **argv){
 
         MPI_Recv(particao, tamParticao, MPI_INT, 0, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
 
+        t = clock();
         verificaPrimo(particao,resposta,tamParticao);
-        
+        t = clock() - t;
+
+        printf("Tempo de execucao em milisegundos: %lf", ((double)t)/((CLOCKS_PER_SEC/1000)));
+
         MPI_Send(resposta, tamParticao, MPI_INT, 0, STD_TAG, MPI_COMM_WORLD);
         
         free(particao);
