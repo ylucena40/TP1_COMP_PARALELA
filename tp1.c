@@ -30,7 +30,7 @@ void verifica_primo(int vetor[], int resposta[],int sizeVet){
 int main(int argc, char* argv[]){
     FILE* entryfile;
     FILE* exitfile;
-    if ((entryfile = fopen(argv[1],"r")) == NULL)
+    if ((entryfile = fopen("entrada.txt","r")) == NULL)
     {
       printf("Error on file opening! \n");
       exit(1);
@@ -50,7 +50,7 @@ int main(int argc, char* argv[]){
     }
 
     fclose(entryfile);
-    entryfile = fopen(argv[1],"r");
+    entryfile = fopen("entrada.txt","r");
     exitfile = fopen("saida.txt","w");
     
     sizeVet = cont;
