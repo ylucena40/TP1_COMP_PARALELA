@@ -39,6 +39,8 @@ int main(int argc, char* argv[]){
     int a,b, cont, sizeVet;
     int *vetor;
     int *resposta;
+    clock_t t;
+
 
     cont = 0;
 
