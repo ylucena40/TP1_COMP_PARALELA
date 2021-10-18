@@ -1,0 +1,503 @@
+Quantidade de processos = 5
+Quantidade de ciclos = 50
+
+Ciclo 1
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.997577 
+Processo 5 - tempo de execucao em segundos: 96.806543 
+Processo 2 - tempo de execucao em segundos: 97.293864 
+Processo 4 - tempo de execucao em segundos: 102.864844 
+Processo 3 - tempo de execucao em segundos: 105.329928 
+-----
+
+Ciclo 2
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.902463 
+Processo 5 - tempo de execucao em segundos: 97.560441 
+Processo 2 - tempo de execucao em segundos: 97.537453 
+Processo 4 - tempo de execucao em segundos: 103.716175 
+Processo 3 - tempo de execucao em segundos: 105.543535 
+-----
+
+Ciclo 3
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.365746 
+Processo 2 - tempo de execucao em segundos: 96.255785 
+Processo 5 - tempo de execucao em segundos: 97.395671 
+Processo 4 - tempo de execucao em segundos: 103.134503 
+Processo 3 - tempo de execucao em segundos: 105.465386 
+-----
+
+Ciclo 4
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.436819 
+Processo 5 - tempo de execucao em segundos: 96.997736 
+Processo 2 - tempo de execucao em segundos: 97.248206 
+Processo 4 - tempo de execucao em segundos: 103.223781 
+Processo 3 - tempo de execucao em segundos: 104.610575 
+-----
+
+Ciclo 5
+-----
+
+Processo 1 - tempo de execucao em segundos: 94.742186 
+Processo 5 - tempo de execucao em segundos: 96.697545 
+Processo 2 - tempo de execucao em segundos: 97.068016 
+Processo 4 - tempo de execucao em segundos: 102.692083 
+Processo 3 - tempo de execucao em segundos: 103.858878 
+-----
+
+Ciclo 6
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.227408 
+Processo 2 - tempo de execucao em segundos: 96.985659 
+Processo 5 - tempo de execucao em segundos: 97.213455 
+Processo 4 - tempo de execucao em segundos: 102.638364 
+Processo 3 - tempo de execucao em segundos: 104.519771 
+-----
+
+Ciclo 7
+-----
+
+Processo 1 - tempo de execucao em segundos: 94.756110 
+Processo 2 - tempo de execucao em segundos: 96.357668 
+Processo 5 - tempo de execucao em segundos: 96.634778 
+Processo 4 - tempo de execucao em segundos: 102.282028 
+Processo 3 - tempo de execucao em segundos: 104.791630 
+-----
+
+Ciclo 8
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.173716 
+Processo 2 - tempo de execucao em segundos: 96.824481 
+Processo 5 - tempo de execucao em segundos: 96.985420 
+Processo 4 - tempo de execucao em segundos: 102.954543 
+Processo 3 - tempo de execucao em segundos: 104.596215 
+-----
+
+Ciclo 9
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.067669 
+Processo 5 - tempo de execucao em segundos: 96.923655 
+Processo 2 - tempo de execucao em segundos: 96.973676 
+Processo 4 - tempo de execucao em segundos: 103.452502 
+Processo 3 - tempo de execucao em segundos: 104.537146 
+-----
+
+Ciclo 10
+-----
+
+Processo 1 - tempo de execucao em segundos: 94.769660 
+Processo 5 - tempo de execucao em segundos: 97.000757 
+Processo 2 - tempo de execucao em segundos: 97.080907 
+Processo 4 - tempo de execucao em segundos: 102.895556 
+Processo 3 - tempo de execucao em segundos: 104.770723 
+-----
+
+Ciclo 11
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.048171 
+Processo 5 - tempo de execucao em segundos: 96.553854 
+Processo 2 - tempo de execucao em segundos: 96.926546 
+Processo 4 - tempo de execucao em segundos: 102.220939 
+Processo 3 - tempo de execucao em segundos: 104.972373 
+-----
+
+Ciclo 12
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.402236 
+Processo 2 - tempo de execucao em segundos: 96.576329 
+Processo 5 - tempo de execucao em segundos: 97.449062 
+Processo 4 - tempo de execucao em segundos: 102.878743 
+Processo 3 - tempo de execucao em segundos: 104.109981 
+-----
+
+Ciclo 13
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.703018 
+Processo 5 - tempo de execucao em segundos: 96.966716 
+Processo 2 - tempo de execucao em segundos: 97.080100 
+Processo 4 - tempo de execucao em segundos: 103.027259 
+Processo 3 - tempo de execucao em segundos: 105.098218 
+-----
+
+Ciclo 14
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.340276 
+Processo 5 - tempo de execucao em segundos: 97.453702 
+Processo 2 - tempo de execucao em segundos: 97.664625 
+Processo 4 - tempo de execucao em segundos: 103.033203 
+Processo 3 - tempo de execucao em segundos: 104.996610 
+-----
+
+Ciclo 15
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.070808 
+Processo 2 - tempo de execucao em segundos: 96.662966 
+Processo 5 - tempo de execucao em segundos: 97.403467 
+Processo 4 - tempo de execucao em segundos: 103.090686 
+Processo 3 - tempo de execucao em segundos: 104.557439 
+-----
+
+Ciclo 16
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.997997 
+Processo 2 - tempo de execucao em segundos: 97.483046 
+Processo 5 - tempo de execucao em segundos: 98.240220 
+Processo 4 - tempo de execucao em segundos: 103.565864 
+Processo 3 - tempo de execucao em segundos: 105.980935 
+-----
+
+Ciclo 17
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.029788 
+Processo 5 - tempo de execucao em segundos: 97.182927 
+Processo 2 - tempo de execucao em segundos: 97.223877 
+Processo 4 - tempo de execucao em segundos: 102.636990 
+Processo 3 - tempo de execucao em segundos: 104.404389 
+-----
+
+Ciclo 18
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.318564 
+Processo 5 - tempo de execucao em segundos: 96.879929 
+Processo 2 - tempo de execucao em segundos: 97.159631 
+Processo 4 - tempo de execucao em segundos: 102.475951 
+Processo 3 - tempo de execucao em segundos: 103.893832 
+-----
+
+Ciclo 19
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.404731 
+Processo 2 - tempo de execucao em segundos: 96.614069 
+Processo 5 - tempo de execucao em segundos: 97.634064 
+Processo 4 - tempo de execucao em segundos: 102.220662 
+Processo 3 - tempo de execucao em segundos: 104.119401 
+-----
+
+Ciclo 20
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.314055 
+Processo 5 - tempo de execucao em segundos: 96.000728 
+Processo 2 - tempo de execucao em segundos: 96.862183 
+Processo 4 - tempo de execucao em segundos: 102.282556 
+Processo 3 - tempo de execucao em segundos: 104.476223 
+-----
+
+Ciclo 21
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.350184 
+Processo 5 - tempo de execucao em segundos: 97.445784 
+Processo 2 - tempo de execucao em segundos: 97.589432 
+Processo 4 - tempo de execucao em segundos: 103.362236 
+Processo 3 - tempo de execucao em segundos: 105.070621 
+-----
+
+Ciclo 22
+-----
+
+Processo 1 - tempo de execucao em segundos: 96.273306 
+Processo 2 - tempo de execucao em segundos: 96.705033 
+Processo 5 - tempo de execucao em segundos: 97.883691 
+Processo 4 - tempo de execucao em segundos: 102.994939 
+Processo 3 - tempo de execucao em segundos: 105.198165 
+-----
+
+Ciclo 23
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.858295 
+Processo 2 - tempo de execucao em segundos: 97.141754 
+Processo 5 - tempo de execucao em segundos: 97.212758 
+Processo 4 - tempo de execucao em segundos: 102.899020 
+Processo 3 - tempo de execucao em segundos: 105.595482 
+-----
+
+Ciclo 24
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.638463 
+Processo 2 - tempo de execucao em segundos: 96.847740 
+Processo 5 - tempo de execucao em segundos: 97.966338 
+Processo 4 - tempo de execucao em segundos: 102.357262 
+Processo 3 - tempo de execucao em segundos: 104.529301 
+-----
+
+Ciclo 25
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.653812 
+Processo 2 - tempo de execucao em segundos: 96.237083 
+Processo 5 - tempo de execucao em segundos: 97.740430 
+Processo 4 - tempo de execucao em segundos: 101.859976 
+Processo 3 - tempo de execucao em segundos: 104.467655 
+-----
+
+Ciclo 26
+-----
+
+Processo 1 - tempo de execucao em segundos: 94.921373 
+Processo 2 - tempo de execucao em segundos: 95.934742 
+Processo 5 - tempo de execucao em segundos: 97.190509 
+Processo 4 - tempo de execucao em segundos: 101.314726 
+Processo 3 - tempo de execucao em segundos: 104.378266 
+-----
+
+Ciclo 27
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.024722 
+Processo 2 - tempo de execucao em segundos: 96.978988 
+Processo 5 - tempo de execucao em segundos: 97.376777 
+Processo 4 - tempo de execucao em segundos: 101.998268 
+Processo 3 - tempo de execucao em segundos: 104.800611 
+-----
+
+Ciclo 28
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.503547 
+Processo 2 - tempo de execucao em segundos: 96.714729 
+Processo 5 - tempo de execucao em segundos: 97.393291 
+Processo 4 - tempo de execucao em segundos: 102.155912 
+Processo 3 - tempo de execucao em segundos: 104.781417 
+-----
+
+Ciclo 29
+-----
+
+Processo 1 - tempo de execucao em segundos: 94.895987 
+Processo 2 - tempo de execucao em segundos: 96.823052 
+Processo 5 - tempo de execucao em segundos: 96.817515 
+Processo 4 - tempo de execucao em segundos: 101.670417 
+Processo 3 - tempo de execucao em segundos: 104.869811 
+-----
+
+Ciclo 30
+-----
+
+Processo 1 - tempo de execucao em segundos: 94.722888 
+Processo 2 - tempo de execucao em segundos: 96.355863 
+Processo 5 - tempo de execucao em segundos: 97.865279 
+Processo 4 - tempo de execucao em segundos: 102.361382 
+Processo 3 - tempo de execucao em segundos: 104.492560 
+-----
+
+Ciclo 31
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.534554 
+Processo 2 - tempo de execucao em segundos: 96.530813 
+Processo 5 - tempo de execucao em segundos: 97.115398 
+Processo 4 - tempo de execucao em segundos: 102.245057 
+Processo 3 - tempo de execucao em segundos: 104.565755 
+-----
+
+Ciclo 32
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.115162 
+Processo 2 - tempo de execucao em segundos: 96.720881 
+Processo 5 - tempo de execucao em segundos: 97.376418 
+Processo 4 - tempo de execucao em segundos: 101.977317 
+Processo 3 - tempo de execucao em segundos: 104.284831 
+-----
+
+Ciclo 33
+-----
+
+Processo 1 - tempo de execucao em segundos: 94.264669 
+Processo 5 - tempo de execucao em segundos: 96.900845 
+Processo 2 - tempo de execucao em segundos: 97.036425 
+Processo 4 - tempo de execucao em segundos: 101.596987 
+Processo 3 - tempo de execucao em segundos: 104.286644 
+-----
+
+Ciclo 34
+-----
+
+Processo 1 - tempo de execucao em segundos: 94.712086 
+Processo 2 - tempo de execucao em segundos: 96.268644 
+Processo 5 - tempo de execucao em segundos: 96.760345 
+Processo 4 - tempo de execucao em segundos: 102.425058 
+Processo 3 - tempo de execucao em segundos: 104.384198 
+-----
+
+Ciclo 35
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.492892 
+Processo 2 - tempo de execucao em segundos: 96.685714 
+Processo 5 - tempo de execucao em segundos: 97.044538 
+Processo 4 - tempo de execucao em segundos: 102.094034 
+Processo 3 - tempo de execucao em segundos: 105.437257 
+-----
+
+Ciclo 36
+-----
+
+Processo 1 - tempo de execucao em segundos: 94.885887 
+Processo 5 - tempo de execucao em segundos: 96.151069 
+Processo 2 - tempo de execucao em segundos: 96.377230 
+Processo 4 - tempo de execucao em segundos: 101.995362 
+Processo 3 - tempo de execucao em segundos: 104.302977 
+-----
+
+Ciclo 37
+-----
+
+Processo 1 - tempo de execucao em segundos: 94.693270 
+Processo 2 - tempo de execucao em segundos: 96.167367 
+Processo 5 - tempo de execucao em segundos: 96.551314 
+Processo 4 - tempo de execucao em segundos: 102.131217 
+Processo 3 - tempo de execucao em segundos: 104.616541 
+-----
+
+Ciclo 38
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.229088 
+Processo 2 - tempo de execucao em segundos: 96.459901 
+Processo 5 - tempo de execucao em segundos: 96.836300 
+Processo 4 - tempo de execucao em segundos: 102.099771 
+Processo 3 - tempo de execucao em segundos: 104.536722 
+-----
+
+Ciclo 39
+-----
+
+Processo 1 - tempo de execucao em segundos: 94.571815 
+Processo 5 - tempo de execucao em segundos: 97.031100 
+Processo 2 - tempo de execucao em segundos: 97.224877 
+Processo 4 - tempo de execucao em segundos: 102.061529 
+Processo 3 - tempo de execucao em segundos: 104.299013 
+-----
+
+Ciclo 40
+-----
+
+Processo 1 - tempo de execucao em segundos: 94.793465 
+Processo 2 - tempo de execucao em segundos: 96.154600 
+Processo 5 - tempo de execucao em segundos: 97.019590 
+Processo 4 - tempo de execucao em segundos: 102.073674 
+Processo 3 - tempo de execucao em segundos: 103.843272 
+-----
+
+Ciclo 41
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.156054 
+Processo 2 - tempo de execucao em segundos: 96.737696 
+Processo 5 - tempo de execucao em segundos: 96.899065 
+Processo 4 - tempo de execucao em segundos: 102.630094 
+Processo 3 - tempo de execucao em segundos: 104.760898 
+-----
+
+Ciclo 42
+-----
+
+Processo 1 - tempo de execucao em segundos: 94.741514 
+Processo 5 - tempo de execucao em segundos: 96.154028 
+Processo 2 - tempo de execucao em segundos: 96.527169 
+Processo 4 - tempo de execucao em segundos: 102.091234 
+Processo 3 - tempo de execucao em segundos: 104.697345 
+-----
+
+Ciclo 43
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.164863 
+Processo 5 - tempo de execucao em segundos: 96.829811 
+Processo 2 - tempo de execucao em segundos: 96.924133 
+Processo 4 - tempo de execucao em segundos: 102.649822 
+Processo 3 - tempo de execucao em segundos: 104.773302 
+-----
+
+Ciclo 44
+-----
+
+Processo 1 - tempo de execucao em segundos: 94.628824 
+Processo 2 - tempo de execucao em segundos: 96.353837 
+Processo 5 - tempo de execucao em segundos: 96.605379 
+Processo 4 - tempo de execucao em segundos: 102.177275 
+Processo 3 - tempo de execucao em segundos: 104.238278 
+-----
+
+Ciclo 45
+-----
+
+Processo 1 - tempo de execucao em segundos: 94.669788 
+Processo 2 - tempo de execucao em segundos: 96.574916 
+Processo 5 - tempo de execucao em segundos: 96.993835 
+Processo 4 - tempo de execucao em segundos: 102.391399 
+Processo 3 - tempo de execucao em segundos: 105.032876 
+-----
+
+Ciclo 46
+-----
+
+Processo 1 - tempo de execucao em segundos: 94.900711 
+Processo 5 - tempo de execucao em segundos: 96.295050 
+Processo 2 - tempo de execucao em segundos: 97.015028 
+Processo 4 - tempo de execucao em segundos: 102.032431 
+Processo 3 - tempo de execucao em segundos: 104.370930 
+-----
+
+Ciclo 47
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.411393 
+Processo 2 - tempo de execucao em segundos: 96.082821 
+Processo 5 - tempo de execucao em segundos: 97.393362 
+Processo 4 - tempo de execucao em segundos: 102.462518 
+Processo 3 - tempo de execucao em segundos: 104.200020 
+-----
+
+Ciclo 48
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.282378 
+Processo 5 - tempo de execucao em segundos: 96.931135 
+Processo 2 - tempo de execucao em segundos: 96.979908 
+Processo 4 - tempo de execucao em segundos: 102.662852 
+Processo 3 - tempo de execucao em segundos: 104.346634 
+-----
+
+Ciclo 49
+-----
+
+Processo 1 - tempo de execucao em segundos: 94.942497 
+Processo 2 - tempo de execucao em segundos: 96.793983 
+Processo 5 - tempo de execucao em segundos: 97.579528 
+Processo 4 - tempo de execucao em segundos: 102.923334 
+Processo 3 - tempo de execucao em segundos: 104.384856 
+-----
+
+Ciclo 50
+-----
+
+Processo 1 - tempo de execucao em segundos: 95.364001 
+Processo 2 - tempo de execucao em segundos: 96.527816 
+Processo 5 - tempo de execucao em segundos: 96.924349 
+Processo 4 - tempo de execucao em segundos: 102.618217 
+Processo 3 - tempo de execucao em segundos: 103.956098 
+-----
+

@@ -3,7 +3,9 @@
 #include <string.h>
 #include <mpi.h>
 #include <time.h>
+
 #define STD_TAG 0
+
 
 void verificaPrimo(int particao[], int resposta[], int sizeVet){
     for(int i = 0; i < sizeVet; i++){
@@ -30,7 +32,7 @@ void verificaPrimo(int particao[], int resposta[], int sizeVet){
 int nLinhasArquivoEntrada(){
     FILE* entryfile;
     
-    if ((entryfile = fopen("testeentrada.txt","r")) == NULL)
+    if ((entryfile = fopen("entrada.txt","r")) == NULL)
     {
       printf("Error on file opening! \n");
       exit(1);
@@ -54,7 +56,7 @@ void arquivoEntrada(int vetor[]){
     
     FILE* entryfile;
     
-    if ((entryfile = fopen("testeentrada.txt","r")) == NULL)
+    if ((entryfile = fopen("entrada.txt","r")) == NULL)
     {
       printf("Error on file opening! \n");
       exit(1);
@@ -77,7 +79,7 @@ void arquivoEntrada(int vetor[]){
 void arquivoSaida(int sizeVet, int resultado[]){
 
     FILE* exitfile;
-    exitfile = fopen("testesaida.txt", "w");
+    exitfile = fopen("saida.txt", "w");
 
     for (int i = 0; i < sizeVet; i++){
         fprintf(exitfile, "%d\n", resultado[i]);
@@ -144,6 +146,11 @@ int main(int argc, char **argv){
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
 
+    if(size == 1){
+        printf("Passe um valor maior de processadores!\n");
+        exit(1);
+    }
+
     if(rank != 0) {
         int tamParticao;
         int *particao;
@@ -163,7 +170,7 @@ int main(int argc, char **argv){
         verificaPrimo(particao,resposta,tamParticao);
         t = clock() - t;
 
-        printf("Tempo de execucao em milisegundos: %lf", ((double)t)/((CLOCKS_PER_SEC/1000)));
+        printf("Processo %d - tempo de execucao em segundos: %lf \n", rank, ((double)t)/((CLOCKS_PER_SEC)));
 
         MPI_Send(resposta, tamParticao, MPI_INT, 0, STD_TAG, MPI_COMM_WORLD);
         
@@ -185,7 +192,7 @@ int main(int argc, char **argv){
         resultado = (int*)malloc(sizeVet*sizeof(int));
 
         arquivoEntrada(vetor);
-
+		
         for(int i = 1; i < size; i++){
             calculaTamPart(&tamParticao,sizeVet,i,size);
             
@@ -196,11 +203,9 @@ int main(int argc, char **argv){
             
             setParticao(vetor,particao,inicio,fim);
             MPI_Send(particao, tamParticao, MPI_INT, i, STD_TAG, MPI_COMM_WORLD);
-
-            free(particao);
         }
 
-        for (int i = 1; i < size; i++){
+        for(int i = 1; i < size; i++){
             
             MPI_Probe(MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
             MPI_Get_count(&status, MPI_INT, &tamParticao);
@@ -216,6 +221,7 @@ int main(int argc, char **argv){
         free(vetor);
         arquivoSaida(sizeVet,resultado);
         free(resultado);
+
     }
 
     MPI_Finalize();

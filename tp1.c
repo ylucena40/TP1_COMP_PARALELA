@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
-void verifica_primo(int vetor[],int sizeVet, FILE* arq){
+void verifica_primo(int vetor[], int resposta[],int sizeVet){
     
     for(int i = 0; i < sizeVet; i++){
         printf("%d\n",vetor[i]);
@@ -13,15 +14,15 @@ void verifica_primo(int vetor[],int sizeVet, FILE* arq){
                 }
             }
             if(cont == 0){
-                fprintf(arq,"%d\n",2);
+                resposta[i] = 2;
             }
             else{
-                fprintf(arq,"%d\n",cont+2);
+                resposta[i] = cont+2;
             }
         }
-        // else {
-        //     fprintf(arq,"%d\n",1);
-        // }
+        else {
+            resposta[i] = 1;
+        }
     }
 }
 
@@ -37,6 +38,7 @@ int main(int argc, char* argv[]){
     
     int a,b, cont, sizeVet;
     int *vetor;
+    int *resposta;
 
     cont = 0;
 
@@ -55,6 +57,7 @@ int main(int argc, char* argv[]){
     cont = 0;
 
     vetor = (int*)malloc(sizeVet*sizeof(int));
+    resposta = (int*)malloc(sizeVet*sizeof(int));
 
     while(!feof(entryfile)){
         b = fscanf(entryfile,"%d",&a);    
@@ -64,7 +67,16 @@ int main(int argc, char* argv[]){
         }
     }
     
-    verifica_primo(vetor,sizeVet,exitfile);
+    t = clock();
+    verifica_primo(vetor,resposta,sizeVet);
+    t = clock() - t;
+
+    printf("Tempo de execucao em segundos: %lf \n", ((double)t)/((CLOCKS_PER_SEC)));
+
+
+    for(int i = 0; i < sizeVet; i++){
+        fprintf(exitfile,"%d\n",resposta[i]);
+    }
 
     free(vetor);
     fclose(entryfile);
